@@ -207,16 +207,3 @@ getProducts();
 
 renderCart();
 
-const sliderTrack = document.getElementById("slider-track");
-
-let slideIndex = 0;
-
-setInterval(() => {
-  slideIndex++;
-
-  if (slideIndex > 2) {
-    slideIndex = 0;
-  }
-
-  sliderTrack.style.transform = `translateX(-${slideIndex * 380}px)`;
-}, 3000);

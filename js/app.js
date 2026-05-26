@@ -207,18 +207,16 @@ getProducts();
 
 renderCart();
 
-const sliderImages = document.querySelectorAll(".slider-img");
+const sliderTrack = document.getElementById("slider-track");
 
-let currentImage = 0;
+let slideIndex = 0;
 
 setInterval(() => {
-  sliderImages[currentImage].classList.remove("active");
+  slideIndex++;
 
-  currentImage++;
-
-  if (currentImage >= sliderImages.length) {
-    currentImage = 0;
+  if (slideIndex > 2) {
+    slideIndex = 0;
   }
 
-  sliderImages[currentImage].classList.add("active");
+  sliderTrack.style.transform = `translateX(-${slideIndex * 380}px)`;
 }, 3000);

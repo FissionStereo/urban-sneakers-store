@@ -202,3 +202,28 @@ body {
 
   font-size: 14px;
 }
+
+.quantity-controls{
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 10px 0;
+}
+
+.quantity-controls button{
+  width: 30px;
+  height: 30px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #00c2ff;
+
+  color: white;
+
+  cursor: pointer;
+}

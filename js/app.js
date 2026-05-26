@@ -97,9 +97,25 @@ function renderCart(){
 
         <div>
           <h3>${item.name}</h3>
-          <p>
-            $${item.price} x ${item.quantity}
-          </p>
+        <div class="quantity-controls">
+
+        <button onclick="decreaseQuantity(${item.id})">
+            -
+        </button>
+
+        <span>
+            ${item.quantity}
+        </span>
+
+        <button onclick="increaseQuantity(${item.id})">
+            +
+        </button>
+
+        </div>
+
+        <p>
+        $${item.price * item.quantity}
+        </p>
         </div>
 
         <button onclick="removeFromCart(${item.id})">
@@ -112,7 +128,11 @@ function renderCart(){
 
   });
 
-  cartCount.textContent = cart.length;
+  cartCount.textContent = cart.length;const totalProducts = cart.reduce((acc, item) => {
+  return acc + item.quantity;
+}, 0);
+
+cartCount.textContent = totalProducts;
 
   cartTotal.textContent = `Total: $${total}`;
 
@@ -125,6 +145,35 @@ function removeFromCart(id){
   saveCart();
 
 }
+
+function increaseQuantity(id){
+
+  const product = cart.find(item => item.id === id);
+
+  product.quantity++;
+
+  saveCart();
+
+}
+
+function decreaseQuantity(id){
+
+  const product = cart.find(item => item.id === id);
+
+  if(product.quantity > 1){
+
+    product.quantity--;
+
+  }else{
+
+    removeFromCart(id);
+
+  }
+
+  saveCart();
+
+}
+
 
 getProducts();
 

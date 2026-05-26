@@ -45,7 +45,7 @@ El proyecto fue desarrollado usando ramas:
 - `feature/github-pages-deploy`
 
 ## 📷 Capturas
-
+<img width="1902" height="918" alt="image" src="https://github.com/user-attachments/assets/d6ce486d-1909-4a81-a58a-e637aab5e007" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4b8b6a49-d44f-4baa-acc8-a1e658dfa142" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/091496aa-b91d-4992-8e45-4329eb2f5b5b" />
 

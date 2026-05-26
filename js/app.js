@@ -1,5 +1,8 @@
 const container = document.getElementById("products-container");
 
+const searchInput = document.getElementById("search-input");
+let productsList = [];
+
 const cartContainer = document.getElementById("cart-container");
 
 const cartCount = document.getElementById("cart-count");
@@ -14,7 +17,9 @@ async function getProducts() {
 
   const products = await response.json();
 
-  renderProducts(products);
+  productsList = products;
+
+    renderProducts(productsList);
 
 }
 
@@ -174,6 +179,19 @@ function decreaseQuantity(id){
 
 }
 
+searchInput.addEventListener("input", () => {
+
+  const searchText = searchInput.value.toLowerCase();
+
+  const filteredProducts = productsList.filter(product => {
+
+    return product.name.toLowerCase().includes(searchText);
+
+  });
+
+  renderProducts(filteredProducts);
+
+});
 
 getProducts();
 

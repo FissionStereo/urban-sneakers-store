@@ -259,20 +259,19 @@ body {
   padding: 80px 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 60px;
   background: #111;
   overflow: hidden;
 }
 
 .hero-content {
-  width: 45%;
-  max-width: 560px;
+  width: 500px;
 }
 
 .hero-slider {
-  width: 360px;
-  height: 260px;
+  width: 520px;
+  height: 380px;
   position: relative;
   overflow: hidden;
   border-radius: 20px;

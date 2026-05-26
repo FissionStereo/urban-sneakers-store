@@ -16,28 +16,33 @@
     </div>
 
     <nav class="nav-links" id="nav-links">
-      <a href="#">Inicio</a>
-      <a href="#">Productos</a>
-      <a href="#">Ofertas</a>
-      <a href="#">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contacto">Contacto</a>
     </nav>
 
-    <button class="cart-btn">
+    <a href="#carrito" class="cart-btn">
       🛒 Carrito
       <span id="cart-count">0</span>
-    </button>
+    </a>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="hero-content">
       <span>Nueva colección 2026</span>
       <h1>Sneakers modernos para tu estilo urbano</h1>
       <p>Encuentra zapatillas exclusivas con diseño premium para destacar todos los días.</p>
-      <button class="primary-btn">Ver productos</button>
+      <a href="#productos" class="primary-btn">Ver productos</a>
     </div>
+    <div class="hero-slider">
+  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="slider-img active" alt="Sneaker 1">
+  <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" class="slider-img" alt="Sneaker 2">
+  <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5" class="slider-img" alt="Sneaker 3">
+</div>
   </section>
 
-  <section class="products">
+  <section class="products" id="productos">
 
     <h2>Productos destacados</h2>
 
@@ -54,7 +59,7 @@
 
   </section>
 
-  <section class="cart-section">
+  <section class="cart-section" id="carrito">
 
   <h2>Carrito de compras</h2>
 
@@ -69,5 +74,9 @@
 </section>
 
   <script src="./js/app.js"></script>
+
+<footer class="footer">
+  <p>Hecho por Fernando Benites</p>
+</footer>
 </body>
 </html>

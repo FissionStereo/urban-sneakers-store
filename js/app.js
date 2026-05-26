@@ -206,3 +206,19 @@ searchInput.addEventListener("input", () => {
 getProducts();
 
 renderCart();
+
+const sliderImages = document.querySelectorAll(".slider-img");
+
+let currentImage = 0;
+
+setInterval(() => {
+  sliderImages[currentImage].classList.remove("active");
+
+  currentImage++;
+
+  if (currentImage >= sliderImages.length) {
+    currentImage = 0;
+  }
+
+  sliderImages[currentImage].classList.add("active");
+}, 3000);

@@ -154,3 +154,51 @@ body {
 
   cursor: pointer;
 }
+
+.cart-section{
+  padding: 80px 60px;
+}
+
+.cart-item{
+  background: #1a1a1a;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.cart-item button{
+  background: red;
+
+  border: none;
+
+  color: white;
+
+  padding: 8px 15px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+#cart-count{
+  background: white;
+
+  color: black;
+
+  padding: 2px 8px;
+
+  border-radius: 50%;
+
+  margin-left: 5px;
+
+  font-size: 14px;
+}

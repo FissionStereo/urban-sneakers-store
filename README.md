@@ -5,7 +5,7 @@ Tienda online moderna tipo e-commerce desarrollada con HTML, CSS y JavaScript pu
 ## 🚀 Demo
 
 🔗 Ver proyecto online:  
-https://TUUSUARIO.github.io/urban-sneakers-store/
+https://fissionstereo.github.io/urban-sneakers-store/
 
 ## 🛠 Tecnologías
 
